@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="SweepIt Политика конфиденциальности — приложение для очистки фото и видео" />
+    <title>SweepIt — Политика конфиденциальности</title>
+    <style>
+        :root{--bg:#0f1724;--card:#0b1320;--muted:#9aa4b2;--accent:#ff9800;--accent-strong:#ffb74d;--success:#4caf50}
+        *{box-sizing:border-box}
+        html,body{height:100%}
+        body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;color:#e6eef7;background:linear-gradient(180deg,#071020 0%,#0b1220 100%);-webkit-font-smoothing:antialiased}
+        .wrap{max-width:960px;margin:28px auto;padding:20px}
+        .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;padding:28px;border:1px solid rgba(255,255,255,0.03);box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+        header{display:flex;gap:16px;align-items:center}
+        .logo{width:64px;height:64px;border-radius:12px;display:inline-block;background:linear-gradient(135deg,var(--accent),#1565c0);color:white;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:28px}
+        h1{font-size:22px;margin:0;color:#fff}
+        .subtitle{margin:0;color:var(--muted);font-size:13px}
+        .meta{margin-top:14px;padding:12px;border-radius:10px;background:rgba(255,152,0,0.06);border-left:4px solid var(--accent);color:var(--accent-strong);font-weight:600}
+        h2{color:#fff;margin-top:22px;margin-bottom:10px;font-size:18px}
+        p{color:var(--muted);line-height:1.6;margin:0 0 12px}
+        ul{color:var(--muted);margin:0 0 16px 18px}
+        .section{margin-top:18px}
+        .box{background:rgba(255,255,255,0.02);padding:14px;border-radius:8px;border:1px solid rgba(255,255,255,0.02)}
+        .third-party{display:flex;flex-wrap:wrap;gap:10px}
+        .badge{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:13px}
+        .contact{background:rgba(255,255,255,0.02);padding:12px;border-radius:8px;margin-top:14px}
+        footer{margin-top:26px;color:rgba(255,255,255,0.4);font-size:13px;text-align:center}
+        @media (max-width:640px){.wrap{padding:12px}.card{padding:18px}h1{font-size:20px}}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="card">
+            <header>
+                <div class="logo">SI</div>
+                <div>
+                    <h1>SweepIt — Политика конфиденциальности</h1>
+                    <div class="subtitle">Текущее поведение приложения и сведения об обработке данных</div>
+                </div>
+            </header>
+
+            <div class="meta">Обновлено: 21 декабря 2025</div>
+
+            <section class="section">
+                <h2>Обзор</h2>
+                <p>SweepIt («Приложение») — инструмент для очистки галереи и управления фото/видео, который работает на вашем устройстве. В этой политике описаны используемые разрешения, данные, которые могут обрабатываться, сторонние сервисы и ваши права.</p>
+            </section>
+
+            <section class="section">
+                <h2>Какие данные мы обрабатываем и зачем</h2>
+                <div class="box">
+                    <p><strong>Как правило, приложение не загружает ваш личный медиа‑контент на сервер.</strong> Однако следующие типы данных могут обрабатываться приложением и сторонними сервисами:</p>
+                    <ul>
+                        <li><strong>Доступ к медиа:</strong> доступ к фото и видео (просмотр, сжатие, удаление, приватное хранилище). Файлы остаются на устройстве; мы не загружаем их содержимое на серверы.</li>
+                        <li><strong>Настройки и счётчики (локально):</strong> небольшие локальные данные (ежедневные счётчики, предпочтения, кэш) хранятся в Hive (локальная БД).</li>
+                        <li><strong>Аналитика и отчёты о сбоях:</strong> приложение может собирать метрики использования и отчёты о сбоях через Firebase Analytics или аналогичные инструменты для производительности/стабильности; личный контент не включается.</li>
+                        <li><strong>Рекламные идентификаторы:</strong> для работы рекламы может использоваться Advertising ID и контекстные сигналы; это обрабатывает Google Mobile Ads.</li>
+                        <li><strong>Платежи / подписки:</strong> покупки обрабатываются через RevenueCat (purchases_flutter). Информация о статусе подписки обрабатывается RevenueCat и не отправляется на наши серверы.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Разрешения и использование</h2>
+                <p>Приложение может запрашивать следующие разрешения Android. Каждое разрешение используется только при включении соответствующей функции:</p>
+                <ul>
+                    <li><strong>READ_MEDIA_IMAGES / READ_MEDIA_VIDEO:</strong> необходимо для отображения и обработки медиа в галерее.</li>
+                    <li><strong>WRITE_EXTERNAL_STORAGE (устаревшие API):</strong> используется для функций, требующих удаления/записи файлов (Android 9 и ниже).</li>
+                    <li><strong>INTERNET:</strong> требуется для рекламы, проверок конфигурации и сервисов покупок.</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>Сторонние сервисы</h2>
+                <p>Некоторые функции используют SDK и сервисы третьих сторон, которые регулируются их собственными политиками:</p>
+                <div class="third-party">
+                    <div class="badge">Google Mobile Ads (AdMob)</div>
+                    <div class="badge">RevenueCat (purchases_flutter)</div>
+                    <div class="badge">Firebase (Analytics / Crashlytics)</div>
+                    <div class="badge">Hive (локальные данные)</div>
+                    <div class="badge">photo_manager (доступ к галерее)</div>
+                </div>
+                <p style="margin-top:12px">Эти сервисы могут собирать данные, например рекламные идентификаторы. Подробности смотрите в политике соответствующего поставщика.</p>
+            </section>
+
+            <section class="section">
+                <h2>Реклама и персонализация</h2>
+                <p>Приложение показывает рекламу. Поставщики (например, Google) могут персонализировать рекламу, используя идентификаторы устройства, местоположение (если разрешено) и использование приложения. Управляйте настройками рекламы в параметрах Android/устройства.</p>
+            </section>
+
+            <section class="section">
+                <h2>Покупки и подписки</h2>
+                <p>Покупки внутри приложения обрабатываются через RevenueCat. Платёжные данные обрабатываются магазином (Google Play / App Store); приложение и RevenueCat не получают полные платёжные реквизиты. Статус покупки/подписки хранится и применяется RevenueCat.</p>
+            </section>
+
+            <section class="section">
+                <h2>Локальное хранение и кэш</h2>
+                <p>Приложение хранит небольшие данные на устройстве (Hive): настройки, ежедневные счётчики, кэш и состояние. Обычно это удаляется при деинсталляции, но зависит от устройства/ОС.</p>
+            </section>
+
+            <section class="section">
+                <h2>Хранение и удаление данных</h2>
+                <ul>
+                    <li>Приложение не хранит копии ваших медиа на сервере.</li>
+                    <li>Файлы, удалённые в приложении, удаляются с устройства; поведение корзины Android может отличаться.</li>
+                    <li>Чтобы удалить локальные данные (настройки, счётчики), удалите приложение; иногда нужно очистить данные вручную (Настройки устройства → Приложения).</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>Ваши права</h2>
+                <p>Поскольку большинство данных хранится локально, обычно нет необходимости обращаться к центральному серверу. Для данных, собираемых рекламными/аналитическими провайдерами, используйте их инструменты управления (например, настройки Google).</p>
+            </section>
+
+            <section class="section">
+                <h2>Конфиденциальность детей</h2>
+                <p>Приложение не собирает намеренно персональные данные детей младше 13 лет. Если вы считаете, что данные были собраны, свяжитесь с нами.</p>
+            </section>
+
+            <section class="section">
+                <h2>Безопасность</h2>
+                <p>Приложение применяет разумные меры безопасности для локальных данных (например, шифрование приватного хранилища). При сетевых операциях (проверка покупок, реклама) применяются практики безопасности сторонних провайдеров.</p>
+            </section>
+
+            <section class="section">
+                <h2>Контакты</h2>
+                <div class="contact">
+                    <p>Если у вас есть вопросы или запрос на удаление данных по этой политике, свяжитесь с нами:</p>
+                    <p><strong>Email:</strong> bilge@lorabilisim.com</p>
+                    <p><strong>Компания:</strong> LoraApps — Iğdır, Türkiye</p>
+                </div>
+            </section>
+
+            <footer>
+                <div>© LoraApps — SweepIt • Все права защищены • Последнее обновление: 21 декабря 2025</div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

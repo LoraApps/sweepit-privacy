@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="SweepIt プライバシーポリシー - 写真と動画のクリーンアップアプリ" />
+    <title>SweepIt - プライバシーポリシー</title>
+    <style>
+        :root{--bg:#0f1724;--card:#0b1320;--muted:#9aa4b2;--accent:#ff9800;--accent-strong:#ffb74d;--success:#4caf50}
+        *{box-sizing:border-box}
+        html,body{height:100%}
+        body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;color:#e6eef7;background:linear-gradient(180deg,#071020 0%,#0b1220 100%);-webkit-font-smoothing:antialiased}
+        .wrap{max-width:960px;margin:28px auto;padding:20px}
+        .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;padding:28px;border:1px solid rgba(255,255,255,0.03);box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+        header{display:flex;gap:16px;align-items:center}
+        .logo{width:64px;height:64px;border-radius:12px;display:inline-block;background:linear-gradient(135deg,var(--accent),#1565c0);color:white;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:28px}
+        h1{font-size:22px;margin:0;color:#fff}
+        .subtitle{margin:0;color:var(--muted);font-size:13px}
+        .meta{margin-top:14px;padding:12px;border-radius:10px;background:rgba(255,152,0,0.06);border-left:4px solid var(--accent);color:var(--accent-strong);font-weight:600}
+        h2{color:#fff;margin-top:22px;margin-bottom:10px;font-size:18px}
+        p{color:var(--muted);line-height:1.6;margin:0 0 12px}
+        ul{color:var(--muted);margin:0 0 16px 18px}
+        .section{margin-top:18px}
+        .box{background:rgba(255,255,255,0.02);padding:14px;border-radius:8px;border:1px solid rgba(255,255,255,0.02)}
+        .third-party{display:flex;flex-wrap:wrap;gap:10px}
+        .badge{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:13px}
+        .contact{background:rgba(255,255,255,0.02);padding:12px;border-radius:8px;margin-top:14px}
+        footer{margin-top:26px;color:rgba(255,255,255,0.4);font-size:13px;text-align:center}
+        @media (max-width:640px){.wrap{padding:12px}.card{padding:18px}h1{font-size:20px}}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="card">
+            <header>
+                <div class="logo">SI</div>
+                <div>
+                    <h1>SweepIt — プライバシーポリシー</h1>
+                    <div class="subtitle">現在のアプリ動作とデータ処理の説明</div>
+                </div>
+            </header>
+
+            <div class="meta">更新日: 2025年12月21日</div>
+
+            <section class="section">
+                <h2>概要</h2>
+                <p>SweepIt（以下「アプリ」）は、端末上で動作するギャラリー整理・写真/動画管理ツールです。本ポリシーでは、利用する権限、処理される可能性のあるデータ、第三者サービス、および利用者の権利について説明します。</p>
+            </section>
+
+            <section class="section">
+                <h2>処理するデータと目的</h2>
+                <div class="box">
+                    <p><strong>通常、アプリは個人のメディア内容をサーバーへアップロードしません。</strong>ただし、以下の種類のデータがアプリおよび第三者サービスによって処理される場合があります。</p>
+                    <ul>
+                        <li><strong>メディアへのアクセス:</strong> 写真/動画へのアクセス（表示、圧縮、削除、プライベート金庫）。ファイルは端末に残り、内容をサーバーへ送信しません。</li>
+                        <li><strong>設定・カウンター（ローカル）:</strong> 日次カウンター、設定、軽量キャッシュなどの小さなデータを Hive（ローカルDB）に保存します。</li>
+                        <li><strong>分析・クラッシュ報告:</strong> Firebase Analytics 等で利用状況やクラッシュ情報を収集する場合があります。性能/安定性のためで、個人のメディア内容は含みません。</li>
+                        <li><strong>広告ID:</strong> 広告表示のため、Advertising ID やコンテキスト情報が利用されることがあります（Google Mobile Ads が処理）。</li>
+                        <li><strong>支払い/サブスクリプション:</strong> 購入は RevenueCat（purchases_flutter）で処理されます。サブスク状態などは RevenueCat が処理し、当社サーバーには送信されません。</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>権限と利用方法</h2>
+                <p>アプリは以下の Android 権限を要求する場合があります。各権限は関連機能が有効なときのみ使用します。</p>
+                <ul>
+                    <li><strong>READ_MEDIA_IMAGES / READ_MEDIA_VIDEO:</strong> ギャラリーの表示・処理に必要。</li>
+                    <li><strong>WRITE_EXTERNAL_STORAGE（旧API）:</strong> ファイルの削除/書き込みが必要な機能向け（Android 9 以下）。</li>
+                    <li><strong>INTERNET:</strong> 広告、設定確認、購入サービスのために必要。</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>第三者サービス</h2>
+                <p>一部機能は第三者 SDK/サービスを利用します。各サービスはそれぞれのポリシーに従います。</p>
+                <div class="third-party">
+                    <div class="badge">Google Mobile Ads (AdMob)</div>
+                    <div class="badge">RevenueCat (purchases_flutter)</div>
+                    <div class="badge">Firebase (Analytics / Crashlytics)</div>
+                    <div class="badge">Hive (local data)</div>
+                    <div class="badge">photo_manager (gallery access)</div>
+                </div>
+                <p style="margin-top:12px">これらのサービスは広告ID等の情報を収集する場合があります。詳細は各提供者のプライバシーポリシーをご確認ください。</p>
+            </section>
+
+            <section class="section">
+                <h2>広告とパーソナライズ</h2>
+                <p>アプリは広告を表示します。広告提供者（例: Google）は、端末識別子、位置情報（許可時）、アプリ利用状況に基づき広告をパーソナライズする場合があります。設定は Android の広告設定等で管理できます。</p>
+            </section>
+
+            <section class="section">
+                <h2>購入とサブスクリプション</h2>
+                <p>アプリ内購入は RevenueCat を通じて処理されます。支払い情報はストア（Google Play / App Store）が直接処理し、アプリおよび RevenueCat は完全な支払い情報を保持しません。購入/サブスク状態は RevenueCat が保存・適用します。</p>
+            </section>
+
+            <section class="section">
+                <h2>ローカル保存とキャッシュ</h2>
+                <p>アプリは小さなデータ（設定、日次カウンター、キャッシュ、状態）を端末に保存します。通常、アンインストールで削除されますが、端末/OS により挙動は異なる場合があります。</p>
+            </section>
+
+            <section class="section">
+                <h2>保持と削除</h2>
+                <ul>
+                    <li>アプリはメディアのコピーをサーバーに保存しません。</li>
+                    <li>アプリで削除したファイルは端末から削除されます（Android のゴミ箱挙動は機種により異なります）。</li>
+                    <li>ローカルデータを削除したい場合はアプリをアンインストールしてください。必要に応じて端末設定から手動でデータ消去が必要な場合があります。</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>利用者の権利</h2>
+                <p>多くのデータはローカル保存のため、サーバーへの開示請求は通常不要です。広告/分析提供者が収集するデータについては、各提供者の管理画面等で設定・削除リクエストを行えます。</p>
+            </section>
+
+            <section class="section">
+                <h2>子どものプライバシー</h2>
+                <p>アプリは 13 歳未満の子どもから意図的に個人情報を収集しません。収集されたと思われる場合はご連絡ください。</p>
+            </section>
+
+            <section class="section">
+                <h2>セキュリティ</h2>
+                <p>アプリはローカルデータに対して合理的なセキュリティ対策を行います（例: 金庫の暗号化）。ネットワーク送信（購入検証、広告等）が関わる場合は第三者のセキュリティ対策が適用されます。</p>
+            </section>
+
+            <section class="section">
+                <h2>お問い合わせ</h2>
+                <div class="contact">
+                    <p>本ポリシーに関する質問や懸念、削除リクエストがある場合はご連絡ください:</p>
+                    <p><strong>Email:</strong> bilge@lorabilisim.com</p>
+                    <p><strong>会社:</strong> LoraApps — Iğdır, Türkiye</p>
+                </div>
+            </section>
+
+            <footer>
+                <div>© LoraApps — SweepIt • All rights reserved • Last update: December 21, 2025</div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

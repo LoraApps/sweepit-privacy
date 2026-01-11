@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="SweepIt 隐私政策 - 照片与视频清理应用" />
+    <title>SweepIt - 隐私政策</title>
+    <style>
+        :root{--bg:#0f1724;--card:#0b1320;--muted:#9aa4b2;--accent:#ff9800;--accent-strong:#ffb74d;--success:#4caf50}
+        *{box-sizing:border-box}
+        html,body{height:100%}
+        body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;color:#e6eef7;background:linear-gradient(180deg,#071020 0%,#0b1220 100%);-webkit-font-smoothing:antialiased}
+        .wrap{max-width:960px;margin:28px auto;padding:20px}
+        .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;padding:28px;border:1px solid rgba(255,255,255,0.03);box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+        header{display:flex;gap:16px;align-items:center}
+        .logo{width:64px;height:64px;border-radius:12px;display:inline-block;background:linear-gradient(135deg,var(--accent),#1565c0);color:white;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:28px}
+        h1{font-size:22px;margin:0;color:#fff}
+        .subtitle{margin:0;color:var(--muted);font-size:13px}
+        .meta{margin-top:14px;padding:12px;border-radius:10px;background:rgba(255,152,0,0.06);border-left:4px solid var(--accent);color:var(--accent-strong);font-weight:600}
+        h2{color:#fff;margin-top:22px;margin-bottom:10px;font-size:18px}
+        p{color:var(--muted);line-height:1.6;margin:0 0 12px}
+        ul{color:var(--muted);margin:0 0 16px 18px}
+        .section{margin-top:18px}
+        .box{background:rgba(255,255,255,0.02);padding:14px;border-radius:8px;border:1px solid rgba(255,255,255,0.02)}
+        .third-party{display:flex;flex-wrap:wrap;gap:10px}
+        .badge{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:13px}
+        .contact{background:rgba(255,255,255,0.02);padding:12px;border-radius:8px;margin-top:14px}
+        footer{margin-top:26px;color:rgba(255,255,255,0.4);font-size:13px;text-align:center}
+        @media (max-width:640px){.wrap{padding:12px}.card{padding:18px}h1{font-size:20px}}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="card">
+            <header>
+                <div class="logo">SI</div>
+                <div>
+                    <h1>SweepIt — 隐私政策</h1>
+                    <div class="subtitle">应用当前行为与数据处理说明</div>
+                </div>
+            </header>
+
+            <div class="meta">更新日期：2025年12月21日</div>
+
+            <section class="section">
+                <h2>概述</h2>
+                <p>SweepIt（以下简称“应用”）是在您的设备上运行的相册清理与照片/视频管理工具。本政策说明应用使用的权限、可能处理的数据类型、第三方服务以及您的权利。</p>
+            </section>
+
+            <section class="section">
+                <h2>我们处理的数据及用途</h2>
+                <div class="box">
+                    <p><strong>通常情况下，应用不会将您的个人媒体内容上传到服务器。</strong>但以下数据类型可能由应用及第三方服务进行处理：</p>
+                    <ul>
+                        <li><strong>媒体访问：</strong>用于访问照片与视频（查看、压缩、删除、私密保险箱）。文件保留在设备上；我们不上传其内容。</li>
+                        <li><strong>应用设置与计数（本地）：</strong>日计数、偏好设置与少量缓存等会存储在 Hive（本地数据库）中。</li>
+                        <li><strong>分析与崩溃报告：</strong>应用可能通过 Firebase Analytics 等工具收集使用指标和崩溃报告，用于性能与稳定性，不包含您的媒体内容。</li>
+                        <li><strong>广告标识符：</strong>为展示广告，可能使用设备 Advertising ID 与上下文信号；由 Google Mobile Ads 处理。</li>
+                        <li><strong>支付/订阅：</strong>内购通过 RevenueCat（purchases_flutter）处理。订阅状态等信息由 RevenueCat 处理，不会发送到我们的服务器。</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>权限与使用方式</h2>
+                <p>应用可能请求以下 Android 权限。每项权限仅在相关功能启用时使用：</p>
+                <ul>
+                    <li><strong>READ_MEDIA_IMAGES / READ_MEDIA_VIDEO：</strong>用于显示与处理相册媒体。</li>
+                    <li><strong>WRITE_EXTERNAL_STORAGE（旧版 API）：</strong>用于需要删除/写入文件的功能（Android 9 及以下）。</li>
+                    <li><strong>INTERNET：</strong>用于广告、配置检查与购买服务。</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>第三方服务</h2>
+                <p>部分功能使用第三方 SDK/服务，受其各自隐私政策约束：</p>
+                <div class="third-party">
+                    <div class="badge">Google Mobile Ads (AdMob)</div>
+                    <div class="badge">RevenueCat (purchases_flutter)</div>
+                    <div class="badge">Firebase (Analytics / Crashlytics)</div>
+                    <div class="badge">Hive (local data)</div>
+                    <div class="badge">photo_manager (gallery access)</div>
+                </div>
+                <p style="margin-top:12px">这些服务可能收集广告标识符等信息。请参阅各服务提供方的隐私政策了解详情。</p>
+            </section>
+
+            <section class="section">
+                <h2>广告与个性化</h2>
+                <p>应用展示广告。广告提供方（如 Google）可能基于设备标识符、位置（如已授权）与应用使用情况进行个性化展示。您可在 Android 广告设置中管理偏好。</p>
+            </section>
+
+            <section class="section">
+                <h2>购买与订阅</h2>
+                <p>内购通过 RevenueCat 处理。支付信息由商店（Google Play / App Store）直接处理；应用与 RevenueCat 不会获取完整支付信息。购买/订阅状态由 RevenueCat 保存并应用。</p>
+            </section>
+
+            <section class="section">
+                <h2>本地存储与缓存</h2>
+                <p>应用在设备本地存储少量数据（Hive）：偏好设置、日计数、缓存与状态信息。通常在卸载时删除，但可能因设备/系统而异。</p>
+            </section>
+
+            <section class="section">
+                <h2>保留与删除</h2>
+                <ul>
+                    <li>应用不会在服务器上保存您的媒体副本。</li>
+                    <li>在应用内删除的文件会从设备删除；Android 回收站行为可能因设备而异。</li>
+                    <li>如需删除本地数据（设置、计数），请卸载应用；某些情况下需在系统设置中手动清除应用数据。</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>您的权利</h2>
+                <p>由于大部分数据保存在本地，通常无需向中心服务器提出数据请求。对于广告/分析提供方收集的数据，请通过其提供的控制项（如 Google 设置）管理偏好与删除请求。</p>
+            </section>
+
+            <section class="section">
+                <h2>儿童隐私</h2>
+                <p>应用不会故意收集 13 岁以下儿童的个人信息。如您认为收集了相关信息，请联系我们。</p>
+            </section>
+
+            <section class="section">
+                <h2>安全</h2>
+                <p>应用对本地数据采取合理安全措施（例如私密保险箱加密）。当涉及网络传输（购买验证、广告）时，将适用第三方服务的安全措施。</p>
+            </section>
+
+            <section class="section">
+                <h2>联系方式</h2>
+                <div class="contact">
+                    <p>如对本隐私政策有疑问、顾虑或删除请求，请联系我们：</p>
+                    <p><strong>Email:</strong> bilge@lorabilisim.com</p>
+                    <p><strong>公司:</strong> LoraApps — Iğdır, Türkiye</p>
+                </div>
+            </section>
+
+            <footer>
+                <div>© LoraApps — SweepIt • All rights reserved • Last update: December 21, 2025</div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

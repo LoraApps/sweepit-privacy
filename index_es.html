@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="SweepIt Política de privacidad - App para limpiar fotos y videos" />
+    <title>SweepIt - Política de privacidad</title>
+    <style>
+        :root{--bg:#0f1724;--card:#0b1320;--muted:#9aa4b2;--accent:#ff9800;--accent-strong:#ffb74d;--success:#4caf50}
+        *{box-sizing:border-box}
+        html,body{height:100%}
+        body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;color:#e6eef7;background:linear-gradient(180deg,#071020 0%,#0b1220 100%);-webkit-font-smoothing:antialiased}
+        .wrap{max-width:960px;margin:28px auto;padding:20px}
+        .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;padding:28px;border:1px solid rgba(255,255,255,0.03);box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+        header{display:flex;gap:16px;align-items:center}
+        .logo{width:64px;height:64px;border-radius:12px;display:inline-block;background:linear-gradient(135deg,var(--accent),#1565c0);color:white;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:28px}
+        h1{font-size:22px;margin:0;color:#fff}
+        .subtitle{margin:0;color:var(--muted);font-size:13px}
+        .meta{margin-top:14px;padding:12px;border-radius:10px;background:rgba(255,152,0,0.06);border-left:4px solid var(--accent);color:var(--accent-strong);font-weight:600}
+        h2{color:#fff;margin-top:22px;margin-bottom:10px;font-size:18px}
+        p{color:var(--muted);line-height:1.6;margin:0 0 12px}
+        ul{color:var(--muted);margin:0 0 16px 18px}
+        .section{margin-top:18px}
+        .box{background:rgba(255,255,255,0.02);padding:14px;border-radius:8px;border:1px solid rgba(255,255,255,0.02)}
+        .third-party{display:flex;flex-wrap:wrap;gap:10px}
+        .badge{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:13px}
+        .contact{background:rgba(255,255,255,0.02);padding:12px;border-radius:8px;margin-top:14px}
+        footer{margin-top:26px;color:rgba(255,255,255,0.4);font-size:13px;text-align:center}
+        @media (max-width:640px){.wrap{padding:12px}.card{padding:18px}h1{font-size:20px}}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="card">
+            <header>
+                <div class="logo">SI</div>
+                <div>
+                    <h1>SweepIt — Política de privacidad</h1>
+                    <div class="subtitle">Comportamiento actual de la app y detalles de tratamiento de datos</div>
+                </div>
+            </header>
+
+            <div class="meta">Actualizado: 21 de diciembre de 2025</div>
+
+            <section class="section">
+                <h2>Resumen</h2>
+                <p>SweepIt (la “App”) es una herramienta de limpieza de galería y gestión de fotos/videos que funciona en tu dispositivo. Esta política explica qué permisos utiliza la app, qué datos pueden procesarse, los servicios de terceros y tus derechos.</p>
+            </section>
+
+            <section class="section">
+                <h2>Datos que procesamos y para qué</h2>
+                <div class="box">
+                    <p><strong>En general, la app no sube tu contenido multimedia personal a un servidor.</strong> Sin embargo, los siguientes tipos de datos pueden ser procesados por la app y por servicios de terceros:</p>
+                    <ul>
+                        <li><strong>Acceso a medios:</strong> Para acceder a tus fotos y videos (ver, comprimir, eliminar, caja privada). Los archivos permanecen en tu dispositivo; no subimos su contenido a servidores.</li>
+                        <li><strong>Ajustes y contadores (local):</strong> Datos locales pequeños como contadores diarios, preferencias y caché se guardan en Hive (base de datos local).</li>
+                        <li><strong>Analítica e informes de fallos:</strong> La app puede recopilar métricas de uso e informes de fallos mediante Firebase Analytics u otras herramientas similares. Se usa para rendimiento/estabilidad y no incluye tu contenido multimedia personal.</li>
+                        <li><strong>Identificadores de publicidad:</strong> Para que los anuncios funcionen, pueden usarse el Advertising ID del dispositivo y señales contextuales; esto lo procesa Google Mobile Ads.</li>
+                        <li><strong>Pagos / suscripciones:</strong> Las compras se gestionan con RevenueCat (purchases_flutter). Información como el estado de suscripción la procesa RevenueCat; no se envía a nuestros propios servidores.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Permisos y cómo se usan</h2>
+                <p>La app puede solicitar los siguientes permisos de Android. Cada permiso se utiliza solo cuando la función relacionada está activa:</p>
+                <ul>
+                    <li><strong>READ_MEDIA_IMAGES / READ_MEDIA_VIDEO:</strong> Necesario para mostrar y procesar medios en tu galería.</li>
+                    <li><strong>WRITE_EXTERNAL_STORAGE (APIs antiguas):</strong> Se usa para funciones que requieren eliminar/escribir archivos (Android 9 o inferior).</li>
+                    <li><strong>INTERNET:</strong> Necesario para anuncios, comprobaciones de configuración y servicios de compra.</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>Servicios de terceros</h2>
+                <p>Algunas funciones usan SDK y servicios de terceros, sujetos a sus propias políticas de privacidad:</p>
+                <div class="third-party">
+                    <div class="badge">Google Mobile Ads (AdMob)</div>
+                    <div class="badge">RevenueCat (purchases_flutter)</div>
+                    <div class="badge">Firebase (Analytics / Crashlytics)</div>
+                    <div class="badge">Hive (datos locales)</div>
+                    <div class="badge">photo_manager (acceso a galería)</div>
+                </div>
+                <p style="margin-top:12px">Estos servicios pueden recopilar datos como identificadores de publicidad u otra información. Por ejemplo, los proveedores de anuncios pueden usar el Advertising ID del dispositivo para segmentación. Consulta la política del proveedor para más detalles.</p>
+            </section>
+
+            <section class="section">
+                <h2>Anuncios y personalización</h2>
+                <p>La app muestra anuncios. Los proveedores (p. ej., Google) pueden personalizarlos usando identificadores del dispositivo, ubicación (si se permite) y uso de la app. Puedes gestionar preferencias en la configuración de anuncios de Android o en los ajustes del dispositivo.</p>
+            </section>
+
+            <section class="section">
+                <h2>Compras y suscripciones</h2>
+                <p>Las compras dentro de la app se procesan mediante RevenueCat. La información de pago la gestiona directamente la tienda (Google Play / App Store); la app y RevenueCat no reciben los detalles completos. El estado de compra/suscripción se guarda y aplica en RevenueCat.</p>
+            </section>
+
+            <section class="section">
+                <h2>Almacenamiento local y caché</h2>
+                <p>La app almacena datos pequeños localmente (Hive): preferencias, contadores diarios, caché y estado. Normalmente se eliminan al desinstalar, aunque puede variar según el dispositivo/SO.</p>
+            </section>
+
+            <section class="section">
+                <h2>Conservación y eliminación</h2>
+                <ul>
+                    <li>La app no guarda copias de tus medios en un servidor.</li>
+                    <li>Los archivos que eliminas en la app se borran del dispositivo; el comportamiento de papelera de Android puede variar.</li>
+                    <li>Para eliminar datos locales (ajustes, contadores), desinstala la app; en algunos casos, debes borrar datos manualmente (Ajustes del dispositivo → Apps).</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>Tus derechos</h2>
+                <p>Como la mayoría de los datos se guardan localmente, normalmente no hay solicitudes a un servidor central. Para datos recopilados por proveedores de anuncios/analítica, puedes gestionar preferencias y solicitudes de eliminación mediante sus controles (p. ej., ajustes de Google).</p>
+            </section>
+
+            <section class="section">
+                <h2>Privacidad de menores</h2>
+                <p>La app no recopila intencionadamente datos personales de menores de 13 años. Si eres padre/madre o tutor y crees que se han recopilado datos, contáctanos.</p>
+            </section>
+
+            <section class="section">
+                <h2>Seguridad</h2>
+                <p>La app aplica medidas razonables para datos locales (p. ej., cifrado de la caja privada). Cuando hay transmisión de red (verificación de compras, anuncios), aplican las prácticas de seguridad de terceros.</p>
+            </section>
+
+            <section class="section">
+                <h2>Contacto</h2>
+                <div class="contact">
+                    <p>Si tienes preguntas, inquietudes o una solicitud de eliminación de datos sobre esta política, contáctanos:</p>
+                    <p><strong>Email:</strong> bilge@lorabilisim.com</p>
+                    <p><strong>Empresa:</strong> LoraApps — Iğdır, Türkiye</p>
+                </div>
+            </section>
+
+            <footer>
+                <div>© LoraApps — SweepIt • Todos los derechos reservados • Última actualización: 21 de diciembre de 2025</div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
